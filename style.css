@@ -311,6 +311,10 @@ a {
   'opsz' 40
 }
 
+button {
+  font-family: 'Montserrat', sans-serif;
+}
+
   /* SIDEBAR */
 
 .sidebar {

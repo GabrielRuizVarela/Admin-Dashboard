@@ -10,7 +10,6 @@
 
 :root {
     font-family: 'Montserrat', sans-serif;
-    /* font-size: 24px; */
     --color-1: #2d8ea4;
     --color-2: rgb(248, 243, 255);
     --color-3: #efdad7;
@@ -23,15 +22,10 @@
      LAYOUT  
     -------- */
 
-body {
-  height: 100vmin;
-}
-
 .container {
   display:grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: auto auto;
-  height: 100%;
 }
 
 /* HEADER */
@@ -52,18 +46,17 @@ body {
   align-items: center;
   gap: 1rem;
 }
+
 .search-bar {
   padding-bottom: 0;
 }
+
 input {
-  /* padding-right: 2rem; */
   border-radius: 10px;
 }
 
 input:focus{
-  /* border: white; */
   outline: 1px solid var(--color-5);
-
 }
 
 img {
@@ -77,6 +70,7 @@ button {
   width: 5rem;
   border-radius: 50px;
 }
+
 button:hover,
 img:hover,
 .profile-name:hover {
@@ -158,7 +152,7 @@ img:hover,
   padding: 0px 2rem;
 }
 
-.horizontal-line{
+.horizontal-line {
   border-bottom: 1px solid var(--color-5);
 }
 
@@ -186,7 +180,7 @@ img:hover,
   height: 5rem;
 }
 
-.icons{
+.icons {
   display: flex;
   justify-content: right;
 }
@@ -217,11 +211,11 @@ img:hover,
   column-gap: 1rem;
 }
 
-.trending-item img{
+.trending-item img {
   grid-row: 1/3;
 }
 
-.trending h4:hover{
+.trending h4:hover {
   cursor: pointer;
 }
 
@@ -296,6 +290,7 @@ a {
   'GRAD' 0,
   'opsz' 40
 }
+
   /* HEADER */
 .header h3 {
   font-size: 0.8rem;
@@ -318,7 +313,7 @@ a {
 
   /* SIDEBAR */
 
-.sidebar{
+.sidebar {
   font-weight: 500;
 }
 

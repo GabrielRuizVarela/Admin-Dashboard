@@ -6,19 +6,49 @@
     padding: 0;
 }
 
-* {
+:root {
     font-family: 'Montserrat', sans-serif;
     /* font-size: 24px; */
+    --color-1: #1572A1;
+    --color-2: #9AD0EC;
+    --color-3: #EFDAD7;
+    --color-3: #E3BEC6;
+}
+
+body{
+  height: 100vmin;
 }
 
 .container {
   display:grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: auto auto;
+  height: 100%;
 }
 
 .header {
   grid-column: 2/3;
+  display: grid;
+  grid-template-rows: auto auto;
+  /* grid-template-columns: auto auto; */
+  align-items: center;
+}
+
+.search-bar, 
+.profile-bar{
+  display: grid;
+  grid-auto-flow: column;
+  padding: 1rem 2rem;
+  grid-template-columns: auto 1fr auto auto auto;
+  align-items: center;
+  gap:0.5rem;
+}
+
+button{
+  height: 2rem;
+  width: 5rem;
+  border-radius: 50px;
+  border: 1px solid black;
 }
 
 .sidebar {
@@ -26,7 +56,6 @@
   grid-column: 1/2;
   display: grid;
   grid-template-columns: 1fr;
-  /* grid-template-rows: ; */
   align-content: start;
   gap: 3rem;
 }
@@ -51,10 +80,64 @@ a:hover{
   cursor: pointer;
 }
 
-
 .board {
   grid-column: 2/3;
   grid-row: 2/3;
+}
+
+
+.board {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.2rem;
+}
+
+.projects-container {
+  grid-row: 1/3;
+  /* display: grid; */
+}
+
+.trending-container {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.projects-container, .trending-container, .announcements-container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 0.5rem;
+}
+
+.projects {
+  /* height: 100%; */
+  /* margin-top: 0.5rem; */
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+}
+.announcements{
+  /* height: 100%; */
+  /* overflow: auto; */
+  /* margin-top: 0.5rem; */
+  display: grid;
+  grid-template-rows: repeat(3,1fr);
+  align-items: center;
+}
+
+.card{
+  padding: 1rem 2rem;
+  /* overflow: hidden; */
+}
+.card p {
+  font-size: 0.8rem;
+  overflow: auto; 
+  width: 100%;
+  height: 5rem;
+}
+.icons{
+  display: flex;
+  justify-content: right;
 }
 
 .material-symbols-outlined {
@@ -65,8 +148,9 @@ a:hover{
   'opsz' 40
 }
 
-img{
+img {
   height: 50px;
   width: 50px;
   border-radius: 50%;
+  
 }

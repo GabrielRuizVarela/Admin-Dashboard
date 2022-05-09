@@ -77,6 +77,12 @@ button {
   width: 5rem;
   border-radius: 50px;
 }
+button:hover,
+img:hover,
+.profile-name:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
 
   /* SIDEBAR */
 
@@ -98,15 +104,16 @@ button {
   list-style: none;
 }
 
+.material-symbols-outlined:hover,
+.sidebar a>div:hover{
+  transform: scale(1.1);
+}
+
 .sidebar a {
   display: flex;
   justify-items: start;
   align-items: center;
   text-decoration: none;
-}
-
-a:hover{
-  cursor: pointer;
 }
 
   /* BOARD */
